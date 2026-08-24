@@ -182,7 +182,7 @@ SVG terminal showing:
 
 Bash
 
-```
+```bash
 ✓ Aura SDK initialized
 ✓ Discord Embedded SDK connected
 ✓ Web4 Gateway online
@@ -194,10 +194,11 @@ Bash
 
 Beautiful multi-platform setup.
 
-Markdown
+###Markdown
 
-````
-### npm
+```shell
+npm
+```
 
 ```bash
 npm install
@@ -217,8 +218,6 @@ pnpm dev
 bun install
 bun dev
 ```
-````
-
 Styled with icons and badges.
 
 ### 10. Roadmap Timeline
