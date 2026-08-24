@@ -1,0 +1,26 @@
+### npm
+
+```bash
+npm install
+npm run dev
+```
+
+### pnpm
+
+```bash
+pnpm install
+pnpm dev
+```
+
+### Bun
+
+```bash
+bun install
+bun dev
+```
+
+### Yarn
+
+```bash
+yarn
+yarn dev
