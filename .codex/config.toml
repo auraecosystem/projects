@@ -1,0 +1,55 @@
+# Aura Projects — Codex workspace configuration
+# Keep repository policy explicit and provider-agnostic.
+
+version = 1
+
+[workspace]
+name = "aura-projects"
+root = "."
+default_branch = "main"
+
+[context]
+files = [
+  "AGENTS.md",
+  ".codex/config.md",
+  "docs/Playground.md",
+  "README.md"
+]
+exclude = [
+  ".git/**",
+  "node_modules/**",
+  "dist/**",
+  "build/**",
+  "coverage/**",
+  "vendor/**"
+]
+
+[behavior]
+prefer_small_changes = true
+preserve_existing_structure = true
+verify_before_claiming = true
+document_architecture_changes = true
+avoid_speculative_files = true
+
+[git]
+branch = "main"
+commit_style = "conventional"
+require_clean_diff = true
+
+[design]
+system = "aura"
+visual_language = "aurora-glass"
+svg_first = true
+github_native = true
+accessibility = true
+
+[commands]
+inspect = "git status --short && git branch --show-current"
+structure = "find . -maxdepth 4 -type f | sort"
+markdown = "find . -name '*.md' -not -path './.git/*' | sort"
+
+[quality]
+check_links = true
+check_markdown = true
+check_svg = true
+check_tree_sitter_queries = true
